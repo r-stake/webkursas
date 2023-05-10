@@ -1,0 +1,14 @@
+button {
+    width: 150px;
+    height: 150px;
+    background-color: gold;
+    border: none;
+    color: magenta;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 1.5s ease-in-out;
+    cursor: pointer;
+}
+ button:hover {
+    background-color: turquoise;
+}

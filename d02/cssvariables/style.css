@@ -1,0 +1,59 @@
+:root {
+    --red: #ff0000;
+    --beige: #000;
+    --yellow: #ffff00;
+}
+
+.grid {
+    --collums: 200px 200px;
+}
+
+html, body {
+    background: var(--beige);
+    color: var(--red);
+}
+
+h2, p {
+    color: var(--red);
+}
+
+#navbar {
+    --nav--red: pink;
+}
+
+#navbar a {
+    color: var(--nav--red);
+}
+
+.item {
+    --item-yellow: #5cc408;
+    background: var(--item-yellow);
+}
+
+button {
+    background: var(--red);
+    color: var(--item-yellow);
+}
+
+.featured {
+    --item-yellow: #bda21b;
+    --red: #ff5564;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--collums);
+    grid-auto-rows: 140px;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+@media all and (max-width: 650px) {
+    .grid {
+        --collums: 300px;
+    }
+
+    :root {
+        --beige: #fffead;
+    };
+}

@@ -1,0 +1,116 @@
+Teisingai sukarpyti savo pasirinktą dizainą:
+
+- Nuotraukos iškirptos, išsaugotos tinkamu formatu ir optimizuotos
+
+- Visos ikonėlės ir jų panaudojimo kodai, taip pat visos pagrindinės dizaine panaudotos spalvos surašytos atskirame dokumente
+
+- Nustatyti naudojami šriftai, išsaugotas iš Google Fonts gautas HTML ir CSS kodas
+
+- Remiantis dizainu, subraižyta jo struktūra
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<i class="bi bi-facebook"></i>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+50c1de - sviesiai melsva spalva
+
+ff7600 - oranzine
+
+
+---------------------------------------------------------
+
+Font - ubuntu:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+font-family: 'Ubuntu', sans-serif;
+
+
+background color - 0B2E4B (nice blue)
+
+-------------------------------------------------------------------------
+Heading - 120px, Bold, auto
+
+Sub heading - 18px, bold, auto
+
+Text - 17px, regular, 150%
+
+-------------------------------------------------------------------------
+Heading2 - 72px, bold, 110%
+
+Meniu (aktyvus) - 18px, bold, 110%. spalva - 41EAD4
+
+Meniu (neaktyvus) - 16px, bold, 110%, spalva - ffffff (realiai pilka)
+
+Heading(meniu item) - 65px, bold, 110%
+
+Text (meniu item) - 17, mixed, 150%
+
+-------------------------------------------------------------------------
+About us (heading) - 72, bold, 110%
+
+Abotu us (text) - 18px, mixed, 150%
+
+-------------------------------------------------------------------------
+Peoples thoughts (heading) - 72px, bold, 110%
+
+Subheading - 24px, bold, 150%.
+
+Dezutes (x4) 510 x 504
+
+Text (dezutes) - 18px, mixed, 190%
+
+----------------------------------------------------------------------------------------------
+See you soon (heading) (galbut kontaktines registracijos formos dalis) - 72px, bold, 110%
+Subheading - 24px, bold, 150%
+
+
+----------------------------------------------------------------------------------------------
+Footer
+Virsutinis elementas - 18px, bold, auto
+skiriamoji icona
+apatiniai elementai - 15px, regular, auto
+
+
+
+
+
+
+
+
+iconos:
+
+linkas is puslapio (bendras): <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+twitter: <i class="bi bi-twitter"></i>
+instagram: <i class="bi bi-instagram"></i>
+facebook: <i class="bi bi-facebook"></i>
+search icon: <i class="bi bi-search"></i>
+rodykle-kaire: <i class="bi bi-arrow-right-short"></i>
+rodykle-desine: <i class="bi bi-arrow-left-short"></i>
+close - <i class="bi bi-x"></i>
+
+
+
+
+Paveiksleliai:
+backgroud: 1921 x 1194 
+meniu paveikslelis: 486 x 607
+about us: 395 x 395 (x4)
+dezutes nuotrauka: 80 x 80
+
+
+
+
+
