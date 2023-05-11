@@ -1,0 +1,85 @@
+/* body {
+    background-color: #ffeead;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+div {
+    border-radius: 5px;
+}
+
+.red {
+    background-color: red;
+    grid-column: 1/-1;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 1/span 2;
+    grid-row: 2/-1;
+}
+
+.green {
+    background-color: green;
+    grid-column: 3/span 2;
+}
+
+.purple-1 {
+    background-color: purple;
+    grid-column: 3/span 1;
+}
+
+.purple-2 {
+    background-color: purple;
+    grid-column: 4/span 1;
+} */
+
+body {
+    background-color: #ffeead;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "r r r r"
+    "b b g g"
+    "b b p d";
+}
+
+div {
+    border-radius: 5px;
+}
+
+.red {
+    background-color: red;
+    grid-area: r;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 1/span 2;
+    grid-area: b;
+}
+
+.green {
+    background-color: green;
+    grid-area: g;
+}
+
+.purple-1 {
+    background-color: purple;
+    grid-area: p;
+}
+
+.purple-2 {
+    background-color: purple;
+    grid-area: d;
+}

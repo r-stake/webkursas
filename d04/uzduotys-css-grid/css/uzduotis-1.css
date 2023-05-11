@@ -1,0 +1,79 @@
+/* body {
+    background-color: #ffeead;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 3px;
+}
+
+div {
+    border-radius: 5px;
+}
+
+.red {
+    background-color: red;
+    grid-column: 1/span 2;
+}
+
+.blue {
+    background-color: blue;
+    grid-column: 3/span 2;
+}
+
+.green {
+    background-color: green;
+    grid-column: 1 /span 1;
+}
+
+.purple {
+    background-color: purple;
+    grid-column: 2/span 3;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-column: 1/-1;
+} */
+
+body {
+    background-color: #ffeead;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "r r b b"
+    "g p p p"
+    "y y y y";
+}
+
+.red {
+    background-color: red;
+    grid-area: r;
+}
+
+.blue {
+    background-color: blue;
+    grid-area: b;
+}
+
+.green {
+    background-color: green;
+    grid-area: g;
+}
+
+.purple {
+    background-color: purple;
+    grid-area: p;
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: y;
+}
