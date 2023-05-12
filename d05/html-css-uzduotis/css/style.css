@@ -64,8 +64,4 @@ img {
     .gallery {
         justify-content: flex-start;
     }
-
-    body {
-        background-color: blue;
-    }
 }
