@@ -1,3 +1,52 @@
-article {
-    border: 2px solid #000;
+html, body {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color:  deepskyblue;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+img {
+    margin-top: 10px;
+}
+
+div {
+    padding: 0 20px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media all and (min-width: 650px) {
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    image {
+        min-width: 400px;
+    }
 }
