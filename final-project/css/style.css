@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #0B2E4B;
+    color: white;
+}
+
+ul {
+    margin: 0;
+    list-style-type: none ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.flex-container {
+    display: flex;
+    border: solid 1px red;
+}
+
+.top-header .flex-container {
+    justify-content: space-between;
+}
+
+.hero .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-header .flex-container {
+    justify-content: space-between;
+}
+
+.journey-menu > .flex-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.journey-choice.flex-container {
+    gap: 100px;
+}
+
+.journey-item a,
+.journey-item a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+#stars.flex-container,
+#forest.flex-container,
+#dunes.flex-container,
+#river.flex-container {
+    gap: 75px;
+}
+
+.journey-description {
+    align-self: flex-start;
+    padding: 50px 0;
+}
+
+.social .flex-container {
+    gap: 10px;
+}
+
+i {
+    color: #41EAD4;
+}
+
+.flex-container > div {
+    border: solid 1px yellow;
+}
+
+#stars .social,
+#forest .social,
+#dunes .social,
+#river .social {
+    align-self: flex-end;
+    padding: 0 30px 150px;
+}
+
+.gallery.flex-container {
+    flex-wrap: wrap;
+}
+
+.about-us .flex-container {
+    justify-content: flex-end;
+}
+
+.about-us-info {
+    flex-shrink: 2;
+}
+
+.testimonials-header .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-item {
+    width: calc(33.3333% - 17px);
+}
+
+.testimonials .testimonials-gallery .container.flex-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gamtos Glėbyje</title>
 </head>
 <body>
     <header>
@@ -21,7 +25,7 @@
         </div>
         <div class="hero">
             <div class="container flex-container">
-                <h1>Gamtos glėbyje</h1>
+                <h1>Gamtos Glėbyje</h1>
                 <h2>Geriausios kokybiško ir aktyvaus poilsio vietos Lietuvoje</h2>
                 <p>Jaučiatės pavargę, įsitempę, negalėte atplėšti akių nuo savo išmaniųjų įrenginių ir juose tūnančių socialinių tinklų ar darbinio pašto paskyros? Sveikiname - jums reikalingas poilsis. Mūsų kruopščiai atrinkti nuotykiai gamtoje leis pamiršti gyvenimo nuoskaudas ir sunkumus. Šioje svetainėje rasite įvairių pasiūlymų tiek ramesnį poilsį mėgstantiems, tiek užkietėjusiems gamtos entuziastams.</p>
             </div>
@@ -44,29 +48,29 @@
     <main>
         <div class="journey">
             <div class="journey-menu">
-                <div class="container">
+                <div class="container flex-container">
                     <div>
                         <h2>Išsirinkite kelionę</h2> 
                     </div>
                     <div class="journey-choice flex-container">
                         <div class="journey-item">
-                            Meteorų lietus
+                            <a href="#stars">Meteorų lietus</a> 
                         </div>
                         <div class="journey-item">
-                            Senoji giria
+                            <a href="#forest">Senoji giria</a>
                         </div>
                         <div class="journey-item">
-                            Pamirštoji dykuma
+                            <a href="#dunes">Pamirštoji dykuma</a>
                         </div>
                         <div class="journey-item">
-                            Rūščioji upė
+                            <a href="#river">Rūščioji upė</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="journey-info">
                 <div class="container">
-                    <div class="stars">
+                    <div id="stars" class="flex-container">
                         <div class="journey-image">
                             <img src="./images/vietove_1.jpg" alt="Žvaigždėtas dangus">
                         </div>
@@ -77,14 +81,14 @@
                             <button>Noriu! / Plačiau</button>
                         </div>
                         <div class="social">
-                            <ul>
+                            <ul class="flex-container">
                                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="forest">
+                    <div id="forest" class="flex-container">
                         <div class="journey-image">
                             <img src="./images/vietove_2.jpg" alt="Labanoro giria">
                         </div>
@@ -95,14 +99,14 @@
                             <button>Noriu! / Plačiau</button>
                         </div>
                         <div class="social">
-                            <ul>
+                            <ul class="flex-container">
                                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="dunes">
+                    <div id="dunes" class="flex-container">
                         <div class="journey-image">
                             <img src="./images/vietove_3.png" alt="Dykuma">
                         </div>
@@ -113,14 +117,14 @@
                             <button>Noriu! / Plačiau</button>
                         </div>
                         <div class="social">
-                            <ul>
+                            <ul class="flex-container">
                                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="river">
+                    <div id="river" class="flex-container">
                         <div class="journey-image">
                             <img src="./images/vietove_4.jpg" alt="Sušlapk kojas">
                         </div>
@@ -131,7 +135,7 @@
                             <button>Noriu! / Plačiau</button>
                         </div>
                         <div class="social">
-                            <ul>
+                            <ul class="flex-container">
                                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
@@ -142,7 +146,7 @@
             </div>
         </div>
         <div class="about-us">
-            <div class="container">
+            <div class="container flex-container">
                 <div class="about-us-info">
                     <h2>Apie mus</h2>
                     <p><strong>Mums vėjas galvoje nešvilpauja. Rimti pasiūlumai, rimtiems žmonėms.</strong></p>
@@ -150,7 +154,7 @@
                     <p><strong>Būkite sveiki ir laimingi!</strong></p>
                     <button>Daugiau apie mūsų misiją</button>
                 </div>
-                <div class="gallery">
+                <div class="gallery flex-container">
                     <div class="gallery-item">
                         <img src="./images/about_us_1.png" alt="man">
                     </div>
@@ -168,14 +172,14 @@
         </div>
         <div class="testimonials">
             <div class="testimonials-header">
-                <div class="container">
+                <div class="container flex-container">
                     <h2>Žmonių atsiliepimai</h2>
                     <h3>Negalite apsispręsti? Pasiklausykite kitų</h3>
                 </div>
             </div>
             <div class="testimonials-gallery">
-                <div class="container">
-                    <div class="testimonials-item">
+                <div class="container flex-container">
+                    <div class="testimonials-item flex-container">
                         <i class="bi bi-quote"></i>
                         <div>
                             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing.</strong></p>
@@ -186,7 +190,7 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="testimonials-item">
+                    <div class="testimonials-item flex-container">
                         <i class="bi bi-quote"></i>
                         <div>
                             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing.</strong></p>
@@ -197,7 +201,7 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="testimonials-item">
+                    <div class="testimonials-item flex-container">
                         <i class="bi bi-quote"></i>
                         <div>
                             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing.</strong></p>
@@ -208,7 +212,7 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="testimonials-item">
+                    <div class="testimonials-item flex-container">
                         <i class="bi bi-quote"></i>
                         <div>
                             <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing.</strong></p>
@@ -248,62 +252,72 @@
                 </form>
             </div>
         </div>
-        <div class="see-you-soon">
-            <h2>Iki pasimatymo!</h2>
-            <h3>Nekantraujame su jumis susitikti ir susipažinti.</h3>
-        </div>
     </main>
     <footer>
-        <div class="about">
-            <ul>
-                <li>APIE MUS</li>
-                <li class="divider"></li>
-                <li>Mūsų misija</li>
-                <li>Privatumo politika</li>
-                <li>Autorių teisės</li>
-            </ul>
+        <div class="see-you-soon">
+            <div class="container">
+                <h2>Iki pasimatymo!</h2>
+                <h3>Nekantraujame su jumis susitikti ir susipažinti.</h3>
+            </div>
         </div>
-        <div class="faq">
-            <ul>
-                <li>D.U.K.</li>
-                <li class="divider"></li>
-                <li>Taisyklės</li>
-                <li>Bilietai</li>
-                <li>Leidiniai</li>
-                <li>Karjera</li>
-            </ul>
+        <div class="footer-items">
+            <div class="container">
+                <div class="about">
+                    <ul>
+                        <li>APIE MUS</li>
+                        <li class="divider"></li>
+                        <li>Mūsų misija</li>
+                        <li>Privatumo politika</li>
+                        <li>Autorių teisės</li>
+                    </ul>
+                </div>
+                <div class="faq">
+                    <ul>
+                        <li>D.U.K.</li>
+                        <li class="divider"></li>
+                        <li>Taisyklės</li>
+                        <li>Bilietai</li>
+                        <li>Leidiniai</li>
+                        <li>Karjera</li>
+                    </ul>
+                </div>
+                <div class="events">
+                    <ul>
+                        <li>RENGINIAI</li>
+                        <li class="divider"></li>
+                        <li>Suskaičiuok žvaigždes</li>
+                        <li>Pasiklysk miške</li>
+                        <li>Nugalėk dykumą</li>
+                        <li>Sušlapk kojas</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <ul>
+                        <li>SUSISIEKITE</li>
+                        <li class="divider"></li>
+                        <li>info@prasmekskradziai.lt</li>
+                        <li>+37012233444</li>
+                        <li>+37056677888</li>
+                    </ul>
+                </div>
+                <div class="social-footer">
+                    <ul>
+                        <li>BENDRAUKIME</li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="events">
-            <ul>
-                <li>RENGINIAI</li>
-                <li class="divider"></li>
-                <li>Suskaičiuok žvaigždes</li>
-                <li>Pasiklysk miške</li>
-                <li>Nugalėk dykumą</li>
-                <li>Sušlapk kojas</li>
-            </ul>
-        </div>
-        <div class="contacts">
-            <ul>
-                <li>SUSISIEKITE</li>
-                <li class="divider"></li>
-                <li>info@prasmekskradziai.lt</li>
-                <li>+37012233444</li>
-                <li>+37056677888</li>
-            </ul>
-        </div>
-        <div class="social-footer">
-            <ul>
-                <li>BENDRAUKIME</li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <div><p>&copy; Gamtos Glėbyje 2023. Visos teisės saugomos.</p></div>
-            <div class="logo">GG</div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copyright">
+                    <div><p>&copy; Gamtos Glėbyje 2023. Visos teisės saugomos.</p></div>
+                    <div class="logo">GG</div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
