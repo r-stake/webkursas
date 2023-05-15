@@ -1,6 +1,16 @@
-html, body {
-    margin: 0;
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+html {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
     background-color: #0B2E4B;
     color: white;
 }
@@ -13,8 +23,10 @@ ul {
 
 .container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 25px;
+    border: solid 1px turquoise;
 }
 
 .flex-container {
@@ -26,26 +38,125 @@ ul {
     border: solid 1px yellow;
 }
 
+/* HEADER */
+
 .site-header .flex-container {
     justify-content: space-between;
+    align-items: center;
 }
 
-.hero .flex-container {
-    flex-direction: column;
-    align-items: center;
+.logo {
+    font-size: 2.25rem;
+    line-height: 190%;
+    letter-spacing: 0%;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0 5px;
+    padding: 10px 17px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    background-color: #06223a;
+    border-radius: 5px;
+}
+
+button.main-menu {
+    background-color: #00C9E0;
+    /* padding: 31px 91px; */
+    border-radius: 48px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1rem;
+    width: 167px;
+    height: 62px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+}
+
+.hero .container h1 {
+    font-size: 7.5rem;
+    font-weight: bold;
+    letter-spacing: -2%;
+    line-height: auto;
+    margin-bottom: 20px;
+}
+
+.hero .container h2 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 10%;
+    line-height: auto;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.hero .container p {
+    font-size: 1.0625rem;
+    letter-spacing: 0%;
+    max-width: 650px;
+    margin: 0 auto 300px;
+    border: solid 1px black;
 }
 
 .social-header .flex-container {
     justify-content: space-between;
 }
 
-.journey-menu > .flex-container{
-    flex-direction: column;
-    align-items: center;
+.social-header {
+    margin-bottom: 200px;
 }
 
-.journey-choice.flex-container {
-    gap: 100px;
+.social-header li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.social-header i {
+    font-size: 1.5rem;
+}
+
+/* JOURNEY */
+
+#journey {
+    border: 1px solid green;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.journey .container .section-heading h2 {
+    /* margin: 0 auto; */
+    text-align: center;
+    border: solid 1px magenta;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: -2%;
+}
+
+.journey-menu .journey-item a {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 110%;
+    letter-spacing: -2%;
+}
+/* -------------------------------------------------------------------------- */
+.journey-menu.flex-container {
+    justify-content: space-evenly;
 }
 
 .journey-item a,

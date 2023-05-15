@@ -29,6 +29,11 @@ body {
 
 .flex-container {
     display:flex;
+    border: solid 1px red;
+}
+
+.flex-container > * {
+    border: solid 1px yellow;
 }
 
 .site-header .container {
