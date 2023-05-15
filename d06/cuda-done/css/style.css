@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 html {
@@ -22,8 +22,9 @@ body {
 
 .container {
     max-width:1140px;
+    width:100%;
     margin:0 auto;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
 .flex-container {
@@ -32,7 +33,7 @@ body {
 
 .site-header .container {
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 .main-nav li {
@@ -43,9 +44,9 @@ body {
     color:#fff;
     font-size:1rem;
     text-transform:uppercase;
-    text-decoration:none;
+    text-decoration: none;
+    margin: 0 5px;
     padding:10px 17px;
-    margin:0 5px;
 }
 
 .main-nav a:hover, .main-nav a:active {
@@ -69,15 +70,13 @@ body {
 }
 
 section > .container {
-    padding:120px 0;
+    padding: 120px 0;
 }
 
 .hero h1 {
     color:#f7f3ea;
     font-size:2.625rem;
     line-height:1.1428;
-    max-width:843px;
-    margin:0 auto;
 }
 
 .hero a, .contact .btn {
@@ -88,10 +87,11 @@ section > .container {
     text-decoration: none;
     background-color:#eb7d4b;
     padding:28px 82px 25px;
+    border-bottom: 4px solid #c86a40;
     border-radius:5px;
-    border-bottom:4px solid #c86a40;
     margin-top:40px;
-    display:inline-block;
+    display: inline-block;
+    cursor:pointer;
 }
 
 /* SERVICES */
@@ -104,13 +104,13 @@ section > .container {
     color:#fff;
 }
 
-.section-heading h2{
+.section-heading h2 {
     font-size:2.5rem;
-    letter-spacing: 0.1em;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-.section-heading h2:after {
+.section-heading h2::after {
     content:"";
     display:block;
     width:90px;
@@ -118,40 +118,36 @@ section > .container {
     margin:22px auto;
 }
 
-.container a, .container p, .container h3 {
-    font-size:1.125rem;
-    letter-spacing: 0.02em;
-}
-
 .section-heading p {
     max-width:610px;
     margin:0 auto;
-    line-height:1.625;
+    font-size:1.125rem;
+    letter-spacing: 0.02em;
 }
 
 .service {
     text-align:center;
     color:#fff;
-    width:200px;
-    margin: 80px auto 0;
+    max-width:200px;
+    margin:80px auto 0;
 }
 
 .service h3 {
     font-size:1.5rem;
-    text-transform: uppercase;
+    text-transform:uppercase;
     font-weight:700;
+    letter-spacing:0.02em;
 }
 
 .section-content p {
     font-size:1rem;
-    line-height: 1.5;
+    line-height:1.5;
     font-weight:300;
 }
 
 /* CONTACT */
 .contact {
     background-color:#3c5499;
-    color:#fff;
 }
 
 .contact .container {
@@ -177,17 +173,16 @@ section > .container {
 }
 
 .contact .section-content .contact-form .input-row input{
-    padding: 20px 25px;
+    padding:20px 25px;
     border-radius:5px;
     border:none;
-    width:calc(50% - 18px);
-    color:#fff;
     background-color:#273a71;
+    color:#fff;
+    width:calc(50% - 18px);
 }
 
 .contact .section-content .contact-form .input-row input::placeholder,
-.contact .section-content .contact-form textarea::placeholder
-{
+.contact .section-content .contact-form textarea::placeholder {
     color:#fff;
 }
 
@@ -200,44 +195,44 @@ section > .container {
 }
 
 .contact .section-content .contact-form textarea {
+    background-color:#273a71;
+    width:100%;
     border:none;
     border-radius:5px;
-    width:100%;
     padding:25px;
     color:#fff;
-    background-color: #273a71;
 }
 
 .contact .section-content .contact-form .btn-form {
-    background-color:#30bae7;
+    background-color: #30bae7;
     border-color:#299ec5;
 }
 
 .contact .btn {
-    margin: 60px auto 0;
-    display:block;
+    margin:60px auto 0;
     width:300px;
+    display:block;
 }
 
 /* FOOTER */
 .footer {
-    background-color:#344b8e;
+    background-color: #344b8e;
     padding:50px 0;
 }
 
 .footer ul {
     justify-content: space-around;
-    list-style:none;
+    list-style: none;
 }
 
 .footer ul li a {
-    display:block;
-    padding:5px;
     color:#fff;
     text-decoration: none;
     font-size:1.5rem;
     font-weight:600;
     letter-spacing: 0.02em;
+    padding:5px;
+    display:block;
 }
 
 .footer ul li a:hover {
@@ -258,9 +253,9 @@ section > .container {
     }
 
     .mobile-nav {
+        display:block;
         position:relative;
         width:100%;
-        display:block;
     }
 
     .mobile-nav li {
@@ -269,28 +264,28 @@ section > .container {
 
     .mobile-nav ul {
         flex-direction:column;
-        display:none;
         position:absolute;
-        width:100%;
         top:133px;
         padding:20px;
         background-color:#fff;
+        width:100%;
+        display:none;
     }
 
     .mobile-nav a {
-        color:#3c4761;
+        color:#3c5499;
         font-size:1rem;
-        text-transform: uppercase;
         text-decoration: none;
+        text-transform:uppercase;
         margin:0 5px;
         padding:10px 17px;
         display:block;
     }
 
     .mobile-nav a:hover, .mobile-nav a:active {
-        background-color: #643a79;
-        color:#fff;
+        background-color:#643a79;
         border-radius:5px;
+        color:#fff;
     }
 
     .mobile-nav a.icon {
@@ -301,7 +296,7 @@ section > .container {
         color:#fff;
     }
 
-    .services .section-content{
+    .services .section-content {
         flex-direction:column;
     }
 
@@ -317,7 +312,7 @@ section > .container {
 @media all and (max-width:640px) {
     .footer-nav .flex-container {
         flex-direction:column;
-        align-items:center;
+        align-items: center;
     }
 }
 
@@ -325,12 +320,11 @@ section > .container {
     section > .container {
         padding:70px 0;
     }
-
-    h1 {
+    .hero h1 {
         font-size:2.3rem;
     }
-
-    .section-heading h2{
+    .section-heading h2 {
         font-size:2.2rem;
     }
 }
+

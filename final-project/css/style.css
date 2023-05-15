@@ -22,7 +22,11 @@ ul {
     border: solid 1px red;
 }
 
-.top-header .flex-container {
+.flex-container > * {
+    border: solid 1px yellow;
+}
+
+.site-header .flex-container {
     justify-content: space-between;
 }
 
@@ -68,10 +72,6 @@ ul {
 
 i {
     color: #41EAD4;
-}
-
-.flex-container > div {
-    border: solid 1px yellow;
 }
 
 #stars .social,
