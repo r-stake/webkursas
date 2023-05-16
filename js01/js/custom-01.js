@@ -16,7 +16,7 @@ let lastName2 = "Stakė";
 const birthYear = 1990;
 let currentYear = new Date().getFullYear()
 
-console.log("Aš esu " + firstName2 + " " + lastName2 + ". " + "Man yra " + (currentYear - birthYear) + " metai." );
+console.log("Aš esu " + firstName2 + " " + lastName2 + ". " + "Man yra " + (currentYear - birthYear) + " metai.");
 
 
 
@@ -26,13 +26,13 @@ Naudokite funkciją Math.random(). Sukurkite du kintamuosius ir naudodamiesi fun
 console.log("");
 console.log("Užduotis 02:");
 
-let num1 = Math.random() * (4 - 0 + 1) + 0;
-let num2 = Math.random() * (4 - 0 + 1) + 0;
+let num1 = Math.floor(Math.random() * (4 - 0 + 1) + 0);
+let num2 = Math.floor(Math.random() * (4 - 0 + 1) + 0);
 
 console.log("Num1: " + num1);
 console.log("Num2: " + num2);
 
-if (num1 == 0 && num2 == 0) {
+if (num1 == 0 || num2 == 0) {
     console.log("Dalyba negalima");
 }
 else if (num1 >= num2) {
@@ -61,38 +61,54 @@ console.log(num3 + ", " + num4 + ", " + num5)
 if (num3 == num4 && num4 == num5) {
     console.log("Visos reikšmės vienodos");
 }
-else if (num3 == Math.min(num3, num4, num5)) {
-    console.log("1-A");
-    if (num5 == Math.max(num4, num5)) {
-        console.log("1-B");
-        console.log(num4);
-    }
-    else if (num4 == Math.max(num4, num5)) {
-        console.log("1-C");
-        console.log(num5);
-    }
+if (num3 == num4 || num3 == num5 || num4 == num5) {
+    console.log("Vidurinės reikšmės nėra");
 }
-else if (num4 == Math.min(num4, num5)) {
-    console.log("2-A");
-    if (num3 == Math.max(num3, num5)) {
-        console.log("2-B");
-        console.log(num5);
-    }
-    else {
-        console.log("2-C");
-        console.log(num3);
-    }
+if (num3 > Math.min(num4, num5) && num3 < Math.max(num4, num5)) {
+    console.log(num3);
 }
-else {
-    if (num3 == Math.max(num3, num4)) {
-        console.log("3-A");
-        console.log(num4);
-    }
-    else if (num4 == Math.max(num3, num4)) {
-        console.log("3-B");
-        console.log(num3);
-    }
+if (num4 > Math.min(num3, num5) && num4 < Math.max(num3, num5)) {
+    console.log(num4);
 }
+if (num5 > Math.min(num3, num4) && num5 < Math.max(num3, num4)) {
+    console.log(num5);
+}
+
+
+// else if (num3 == Math.min(num3, num4, num5)) {              //Pirmasis sprendimas
+//     console.log("1-A");
+//     if (num5 == Math.max(num4, num5)) {
+//         console.log("1-B");
+//         console.log(num4);
+//     }
+//     else if (num4 == Math.max(num4, num5)) {
+//         console.log("1-C");
+//         console.log(num5);
+//     }
+// }
+// else if (num4 == Math.min(num4, num5)) {
+//     console.log("2-A");
+//     if (num3 == Math.max(num3, num5)) {
+//         console.log("2-B");
+//         console.log(num5);
+//     }
+//     else {
+//         console.log("2-C");
+//         console.log(num3);
+//     }
+// }
+// else {
+//     if (num3 == Math.max(num3, num4)) {
+//         console.log("3-A");
+//         console.log(num4);
+//     }
+//     else if (num4 == Math.max(num3, num4)) {
+//         console.log("3-B");
+//         console.log(num3);
+//     }
+// }
+
+
 
 /* 04.
 Įvedami skaičiai - kr1, kr2, kr3 – kraštinių ilgiai, trys kintamieji (naudokite ​Math.random()​ funkcija nuo 1 iki 10). Parašykite JavaScript programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų. 
