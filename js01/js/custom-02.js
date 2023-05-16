@@ -1,15 +1,32 @@
+console.log("");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("Custom-02 sprendimai:");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("");
+
 /* 
 Užduotis 1
 Naudodami while loop, konsolėje parašykite nuo 10 iki 1. 
 */
 
+console.log("Užduotis 01:");
 
+let counter = 10;
+while (counter > 0) {
+    console.log(counter);
+    counter--;
+}
 
 /* 
 Užduotis 2
 Naudodami for loop, konsolėje parašykite nuo 10 iki 1.
 */
+console.log("");
+console.log("Užduotis 02:");
 
+for (i = 10; i > 0; i--) {
+    console.log(i);
+}
 
 
 /*
@@ -25,7 +42,18 @@ let kiekMenSpausdinti = 12;
 Po 1 mėnesio(-ių) bus 16 avių!
 Po 2 mėnesio(-ių) bus 64 avių!
 */
+console.log("");
+console.log("Užduotis 03:");
 
+let numAvys = 4;
+let numMenuo = 1;
+let kiekMenSpausdinti = 12;
+
+
+while (numMenuo <= 12) {
+    console.log(numAvys ** numMenuo)
+    numMenuo++;
+}
 
 
 /*

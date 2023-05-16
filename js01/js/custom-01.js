@@ -2,7 +2,10 @@
 Uždavinių sprendimui nenaudoti, masyvų, ciklų ir savo parašytų funkcijų. JavaScript funkcijas žinoma naudokite (pageidautina).
 Visi random generuojami skaičiai turi būti sveikieji.
 */
+console.log("");
+console.log("-------------------------------------------------------------------------------------------------------------------");
 console.log("Custom-01 sprendimai:");
+console.log("-------------------------------------------------------------------------------------------------------------------");
 console.log("");
 /* 01.
 Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
