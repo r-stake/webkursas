@@ -50,7 +50,7 @@ let numMenuo = 1;
 let kiekMenSpausdinti = 12;
 
 
-while (numMenuo <= 12) {
+while (numMenuo <= kiekMenSpausdinti) {
     console.log(numAvys ** numMenuo)
     numMenuo++;
 }
@@ -60,6 +60,13 @@ while (numMenuo <= 12) {
 Užduotis 4
 Atlikite užduotį JS 03 su for loop
 */
+console.log("");
+console.log("Užduotis 03:");
+
+numMenuo = 1;
+for (; numMenuo <= kiekMenSpausdinti; numMenuo++) {
+    console.log(numAvys ** numMenuo)
+}
 
 
 
