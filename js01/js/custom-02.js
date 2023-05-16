@@ -61,7 +61,7 @@ Užduotis 4
 Atlikite užduotį JS 03 su for loop
 */
 console.log("");
-console.log("Užduotis 03:");
+console.log("Užduotis 04:");
 
 numMenuo = 1;
 for (; numMenuo <= kiekMenSpausdinti; numMenuo++) {
@@ -82,6 +82,23 @@ let currentGen = 1;
 let totalGen = 19;
 let totalMW = 0;
 */
+console.log("");
+console.log("Užduotis 04:");
+
+let currentGen = 1;
+let totalGen = 19;
+let totalMW = 0;
+
+while (currentGen <= totalGen - 15) {
+    totalMW += 62;
+    console.log("Generatorius #" + currentGen + " įjungtas, pridėjo 62 MW, viso generuojama " + totalMW + "MW!");
+    currentGen++;
+}
+
+for (; currentGen <= totalGen; currentGen++) {
+    totalMW += 124;
+    console.log("Generatorius #" + currentGen + " įjungtas, pridėjo 124 MW, viso generuojama " + totalMW + "MW!");
+}
 
 
 
@@ -113,6 +130,16 @@ console.log(num);
 num--;
 }
 */
+console.log("");
+console.log("Užduotis 07:");
+
+let numNew=10;
+while (numNew >= 2) {
+
+console.log(numNew);
+
+numNew -= 2;
+}
 
 
 
@@ -120,7 +147,22 @@ num--;
 Užduotis 8
 Sukurk funkciją maxOf2, kuri priima du skaičius ir gražina didesnį skaičių. Nepamiršk galimybės, kad skaičiai bus lygūs. Tuo atveju gražink vieną iš skaičių.
 */
+console.log("");
+console.log("Užduotis 08:");
 
+function maxOf2(n1, n2) {
+    if(n1 > n2) {
+        return n1;
+    }
+    else if(n2 > n1) {
+        return n2;        
+    }
+    else {
+        return n1;
+    }
+}
+
+console.log("Higher number: " + maxOf2(7, 7));
 
 
 /*
