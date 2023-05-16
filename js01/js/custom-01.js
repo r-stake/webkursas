@@ -363,3 +363,179 @@ console.log("Laikas: " + valandos1 + valandos2 + ":" + minutes1 + minutes2 + ":"
 /* 10.
 Naudokite funkciją Math.random(). Sugeneruokite 6 kintamuosius su atsitiktinėm reikšmėm nuo 1000 iki 9999. Atspausdinkite reikšmes viename string'e, išrūšiuotas nuo didžiausios iki mažiausios, atskirtas tarpais. Naudoti ciklų ir masyvų NEGALIMA.
 */
+console.log("");
+console.log("Užduotis 10:");
+// create variables with random values
+let random1 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let random2 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let random3 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let random4 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let random5 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+let random6 = Math.floor(Math.random() * (9999 - 1000 + 1) + 1000);
+
+console.log("Kintamieji su atistiktinėmis reikšmėmis: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 1
+let sorted1 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Pirmasis kintamasis: " + sorted1);
+
+if (sorted1 == random1) {
+    random1 = 0;
+}
+else if (sorted1 == random2) {
+    random2 = 0;
+}
+else if (sorted1 == random3) {
+    random3 = 0;
+}
+else if (sorted1 == random4) {
+    random4 = 0;
+}
+else if (sorted1 == random5) {
+    random5 = 0;
+}
+else if (sorted1 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po pirmo rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 2
+let sorted2 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Antrasis kintamasis: " + sorted2);
+
+if (sorted2 == random1) {
+    random1 = 0;
+}
+else if (sorted2 == random2) {
+    random2 = 0;
+}
+else if (sorted2 == random3) {
+    random3 = 0;
+}
+else if (sorted2 == random4) {
+    random4 = 0;
+}
+else if (sorted2 == random5) {
+    random5 = 0;
+}
+else if (sorted2 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po antro rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 3
+let sorted3 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Trečiasis kintamasis: " + sorted3);
+
+if (sorted3 == random1) {
+    random1 = 0;
+}
+else if (sorted3 == random2) {
+    random2 = 0;
+}
+else if (sorted3 == random3) {
+    random3 = 0;
+}
+else if (sorted3 == random4) {
+    random4 = 0;
+}
+else if (sorted3 == random5) {
+    random5 = 0;
+}
+else if (sorted3 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po trečio rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 4
+let sorted4 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Ketvirtasis kintamasis: " + sorted4);
+
+if (sorted4 == random1) {
+    random1 = 0;
+}
+else if (sorted4 == random2) {
+    random2 = 0;
+}
+else if (sorted4 == random3) {
+    random3 = 0;
+}
+else if (sorted4 == random4) {
+    random4 = 0;
+}
+else if (sorted4 == random5) {
+    random5 = 0;
+}
+else if (sorted4 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po ketvirto rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 5
+let sorted5 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Penktasis kintamasis: " + sorted5);
+
+if (sorted5 == random1) {
+    random1 = 0;
+}
+else if (sorted5 == random2) {
+    random2 = 0;
+}
+else if (sorted5 == random3) {
+    random3 = 0;
+}
+else if (sorted5 == random4) {
+    random4 = 0;
+}
+else if (sorted5 == random5) {
+    random5 = 0;
+}
+else if (sorted5 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po penkto rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+// sort variables 6
+let sorted6 = Math.max(random1, random2, random3, random4, random5, random6);
+
+console.log("Šeštasos kintamasis: " + sorted6);
+
+if (sorted6 == random1) {
+    random1 = 0;
+}
+else if (sorted6 == random2) {
+    random2 = 0;
+}
+else if (sorted6 == random3) {
+    random3 = 0;
+}
+else if (sorted6 == random4) {
+    random4 = 0;
+}
+else if (sorted6 == random5) {
+    random5 = 0;
+}
+else if (sorted6 == random6) {
+    random6 = 0;
+}
+
+console.log("Kintamieji po šešto rūšiavimo: " + random1 + ", " + random2 + ", " + random3 + ", " + random4 + ", " + random5 + ", " + random6);
+console.log("");
+
+console.log(sorted1 + " " + sorted2 + " " + sorted3 + " " + sorted4 + " " + sorted5 + " " + sorted6)
