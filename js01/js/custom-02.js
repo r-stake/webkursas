@@ -83,7 +83,7 @@ let totalGen = 19;
 let totalMW = 0;
 */
 console.log("");
-console.log("Užduotis 04:");
+console.log("Užduotis 05:");
 
 let currentGen = 1;
 let totalGen = 19;
