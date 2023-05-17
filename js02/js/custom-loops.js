@@ -1,8 +1,15 @@
+console.log("");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("Custom-loops sprendimai:");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("");
+
 /* LENGVESNI */
 
 /* 01.
 Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
 */
+console.log("Užduotis 01:");
 
 for (i = 0; i < 10; i++) {
     console.log("Labas");
@@ -11,10 +18,22 @@ for (i = 0; i < 10; i++) {
 /* 02.
 Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9.
 */
+console.log("");
+console.log("Užduotis 02:");
+
+
+for (i = 0; i <= 9; i++) {
+    console.log(i);
+}
 
 /* 03.
 Sukurkite masyvą su dešimt augalų pavadinimų.
 */
+console.log("");
+console.log("Užduotis 03:");
+
+let augalai = [beržas, sultenė, morka, pomidoras, neumžmirštuolė, asiūklis, kaktusas, žirnelis, citrinmedis, agrastas];
+
 
 /* 04.
 Atspausdinkite kiekvieną 3-čio uždavinio augalą atskiroje eilutėje.
