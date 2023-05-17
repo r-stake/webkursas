@@ -119,3 +119,11 @@ console.log(studentai);
 
 studentai.push("Artūras");
 console.log(studentai);
+
+let pirmasMasyvas = ["Šeši", 5, "Žuvis", "Trylika"];
+let antrasMasyvas = ["Raudonas", "Mėlynas", "Geltonas", "Žalias"];
+let masyvuMasyvas = [pirmasMasyvas, antrasMasyvas];
+
+console.log(masyvuMasyvas);
+
+console.log(masyvuMasyvas[0][3]);

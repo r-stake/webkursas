@@ -221,6 +221,79 @@ Turime masyvą, kuriame yra trumpos tekstinės eilutės (pateikta apačioje). M�
 // Masyvas
 let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu"];
 */
+console.log("");
+console.log("Užduotis 10:");
+
+let posts = ["Sveikinu radus darbą", "Ar tikrai pabaigus kursą viskas bus gerai", "Javascript nėra Java", "Rasti video medžiagą visada šaunu", "yabadab adoooss sssssssss"];
+
+let testString = "Mano megstamiausia sriuba - pomidoru"; // test
+
+
+
+// Ilgiausio žodžio paieška
+
+function velnioUsai(parametras) {
+
+    let charCount = 0;
+    let charCountHighest = 0;
+    let currentWord = 0;
+    let longestWord = 0;
+    let longestWords = [];
+
+    for (n = 0; n < posts.length; n++) {
+        for (i = 0; i < posts[n].length; i++) { // tikriname po raidę
+            if (posts[n].charAt(i) !== " " || posts[n].charAt(i) == (posts[n].length - 1)) {
+                if (currentWord == 0) {
+                    currentWord = posts[n].charAt(i);
+                    console.log("Current word is: " + currentWord)
+                    charCount++;
+                }
+                else {
+                    currentWord += posts[n].charAt(i);
+                    console.log("Current word is: " + currentWord)
+                    console.log("success")
+                    charCount++;
+                }
+            }
+            else {
+                if (charCount > charCountHighest) {
+                    console.log("Final word is: " + currentWord)
+                    charCountHighest = charCount;
+                    charCount = 0;
+                    longestWord = currentWord;
+                    console.log("------------------------ Kol kas ilgiausias žodis : " + n + "-ame indekse ----------------------------- " + "''" + longestWord + "''")
+                    currentWord = 0;
+                    
+                }
+                else {
+                    console.log("Final word is: " + currentWord)
+                    charCount = 0;
+                    currentWord = 0;
+                    console.log("Žodžio pabaiga")
+                }
+            }
+        }
+        longestWords.push(longestWord);
+        console.log("Įrašomas žodis į masyvą: ---------------------------" + "''" + longestWord + "''")
+        charCountHighest = 0;
+        charCount = 0;
+        currentWord = 0;
+    }
+    console.log("Longest word has: " + charCountHighest + " characters");
+    console.log("Longest word is: " + longestWord);
+    console.log(longestWords);
+
+    // let zinute = longestWords.join(" ");
+    // // for (i = 0; i < longestWords.length; i++) {
+    // //     zinute += longestWords[i] + " ";
+    // // }
+    // console.log(zinute);
+    
+}
+
+velnioUsai(posts);
+
+
 
 
 

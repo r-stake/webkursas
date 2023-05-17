@@ -4,6 +4,10 @@
 Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
 */
 
+for (i = 0; i < 10; i++) {
+    console.log("Labas");
+}
+
 /* 02.
 Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9.
 */
