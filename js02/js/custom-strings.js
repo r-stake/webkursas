@@ -23,23 +23,49 @@ Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavard�
 console.log("");
 console.log("Užduotis 02:");
 
-
-
 console.log(aktoriausVardas.toUpperCase() + " " + aktoriausPavarde.toLowerCase());
-
-
 
 /* 03.
 Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 */
+console.log("");
+console.log("Užduotis 03:");
 
-
+let jungtinisStringas = aktoriausVardas.charAt(0);
+jungtinisStringas += aktoriausPavarde.charAt(0);
+console.log(jungtinisStringas);
 
 /* 04.
 Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 */
-
-
+console.log("");
+console.log("Užduotis 04:");
+jungtinisStringas = 0;
+for (i = 0; i < aktoriausVardas.length; i++) {
+    if (i >= aktoriausVardas.length - 3) {
+        if (jungtinisStringas == 0) {
+            jungtinisStringas = aktoriausVardas.charAt(i);
+            console.log("1-A: " + jungtinisStringas);
+        }
+        else {
+            jungtinisStringas += aktoriausVardas.charAt(i);
+            console.log("1-B: " + jungtinisStringas);
+        }
+    }
+}
+for (i = 0; i < aktoriausPavarde.length; i++) {
+    if (i >= aktoriausPavarde.length - 3) {
+        if (jungtinisStringas == 0) {
+            jungtinisStringas = aktoriausPavarde.charAt(i);
+            console.log("1-A: " + jungtinisStringas);
+        }
+        else {
+            jungtinisStringas += aktoriausPavarde.charAt(i);
+            console.log("1-B: " + jungtinisStringas);
+        }
+    }
+}
+console.log("Trys paskutinės vardo ir pavardės raidės: " + jungtinisStringas);
 
 /* 05.
 Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
