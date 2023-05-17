@@ -71,7 +71,12 @@ console.log("Trys paskutinės vardo ir pavardės raidės: " + jungtinisStringas)
 Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 */
 
+let american = "An American in Paris";
 
+// console.log(american.replace(/a/gi, "*"));
+
+american = american.replace(/a/gi, "*")
+console.log(american);
 
 /* 06.
 Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
