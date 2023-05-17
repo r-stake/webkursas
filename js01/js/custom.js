@@ -87,3 +87,35 @@ console.log(sum);
 // i = 0, 1, 2, 3, 4, 5, 6, 7
 // reiksme = 10, 20, 30, 40, 50, 60, 70, 80
 // sum = 10, 30, 60, 100, 150, 210, 280, 360
+
+// alert("Labas rytas!");
+
+// confirm("Spresim užduotis?");
+
+// prompt("Koks tavo vardas?");
+
+// let turimVarda = false;
+
+// while (turimVarda == false) {
+//     let userVardas = prompt("Koks tavo vardas?");
+// if(userVardas) {
+//     if(confirm(`Ar tikrai tavo vardas ${userVardas}?`)) {
+//         alert(`Labas, ${userVardas}!`);
+//         turimVarda = true;
+//     } else {
+//         alert("Bandyk dar kart.");
+//     }
+// } else {
+//     alert("bakdyk dar kart.");
+// }
+
+// }
+
+let studentai = ["Lukas", "Kęstutis", "Silvija", "Uršulė", "Laurynas"];
+console.log(studentai);
+
+studentai.pop();
+console.log(studentai);
+
+studentai.push("Artūras");
+console.log(studentai);

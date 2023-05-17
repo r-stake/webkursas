@@ -116,6 +116,25 @@ let totalGen = 19;
 let totalMW = 0;
 */
 
+console.log("");
+console.log("Užduotis 06:");
+totalMW = 0;
+for (i = 1; i < 19; i++) {
+    if (i % 2 == 1) {
+        console.log("Generatorius #" + i + " išjungtas.");
+    }
+    else {
+        if (i <= 4) {
+            totalMW += 62;
+            console.log("Generatorius #" + i + " įjungtas, pridėjo 62 MW, viso generuojama " + totalMW);
+        }
+        else {
+            totalMW += 124;
+            console.log("Generatorius #" + i + " įjungtas, pridėjo 124 MW, viso generuojama " + totalMW);
+        }
+    }
+}
+
 
 
 /*
@@ -180,7 +199,14 @@ Būtinos sąlygos:
 Rezultatas:
 Lietuvoje šiuo metu -3.3 laipsnių pagal Celsijų
 */
+console.log("");
+console.log("Užduotis 09:");
 
+let temperaturaF = 26;
+let temperaturaC = (temperaturaF - 32) * (5/9);
+let oruZinute = ("Lietuvoje šiuo metu " + temperaturaC.toFixed(1) + " laipsnių pagal Celsijų");
+
+console.log(oruZinute);
 
 
 /*
