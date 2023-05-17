@@ -1,12 +1,27 @@
+console.log("");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("Custom-strings sprendimai:");
+console.log("-------------------------------------------------------------------------------------------------------------------");
+console.log("");
 /* 01.
 Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
 */
+console.log("Užduotis 01:");
+let aktoriausVardas = "Alan";
+let aktoriausPavarde = "Rickman";
 
-
+if (aktoriausVardas.length < aktoriausPavarde.length) {
+    console.log (aktoriausVardas);
+}
+else {
+    console.log(aktoriausPavarde);
+}
 
 /* 02.
 Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms. (LEONARDO dicaprio)
 */
+console.log("");
+console.log("Užduotis 02:");
 
 
 
