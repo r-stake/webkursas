@@ -32,24 +32,54 @@ Sukurkite masyvą su dešimt augalų pavadinimų.
 console.log("");
 console.log("Užduotis 03:");
 
-let augalai = [beržas, sultenė, morka, pomidoras, neumžmirštuolė, asiūklis, kaktusas, žirnelis, citrinmedis, agrastas];
+let augalai = ["beržas", "sultenė", "morka", "pomidoras", "neumžmirštuolė", "asiūklis", "kaktusas", "žirnelis", "citrinmedis", "agrastas"];
 
+console.log(augalai);
 
 /* 04.
 Atspausdinkite kiekvieną 3-čio uždavinio augalą atskiroje eilutėje.
 */
+console.log("");
+console.log("Užduotis 04:");
+
+for (let i = 0; i < augalai.length; i++) {
+    console.log(augalai[i]);
+}
 
 /* 05.
 Atspausdinkite 3-čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).
 */
+console.log("");
+console.log("Užduotis 05:");
+
+for (let i = augalai.length - 1; i >= 0; i--) {
+    console.log(augalai[i]);
+}
 
 /* 06.
 Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius);
 */
+console.log("");
+console.log("Užduotis 06:");
+
+for (i = 10; i <= 50; i+=2) {
+    console.log(i);
+}
 
 /* 07.
 Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkite. ( naudokite continue.) (atspausdinti visus porinius skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
 */
+console.log("");
+console.log("Užduotis 07:");
+
+for (i = 10; i <= 50; i+=2) {
+    if (i % 10 == 0) {
+        continue;   
+    }
+    else {
+        console.log(i)
+    }
+}
 
 /* 08.
 Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
