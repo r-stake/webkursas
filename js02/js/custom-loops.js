@@ -84,7 +84,6 @@ for (i = 10; i <= 50; i+=2) {
 /* 08.
 Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
 */
-
 console.log("");
 console.log("Užduotis 08:");
 
@@ -100,6 +99,8 @@ console.log(kiekKartuPorinis);
 /* 09.
 Suskaičiuokite kiek 3-čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai, ir kiek ilgesnių nei 7 simboliai.
 */
+console.log("");
+console.log("Užduotis 09:");
 
 let trumpesniNeiPenki = 0;
 let ilgesniNeiSeptyni = 0;
