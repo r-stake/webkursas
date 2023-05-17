@@ -32,7 +32,7 @@ Sukurkite masyvą su dešimt augalų pavadinimų.
 console.log("");
 console.log("Užduotis 03:");
 
-let augalai = ["beržas", "sultenė", "morka", "pomidoras", "neumžmirštuolė", "asiūklis", "kaktusas", "žirnelis", "citrinmedis", "agrastas"];
+let augalai = ["beržas", "sultenė", "morka", "pomidoras", "neumžmirštuolė", "asiūklis", "kaktusas", "žirnelis", "citrinmedis", "žolė"];
 
 console.log(augalai);
 
@@ -85,9 +85,36 @@ for (i = 10; i <= 50; i+=2) {
 Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
 */
 
+console.log("");
+console.log("Užduotis 08:");
+
+let kiekKartuPorinis = 0;
+for (i = 1; i <= 20; i++) {
+    if (i % 2 == 0) {
+        kiekKartuPorinis++;
+    }
+}
+
+console.log(kiekKartuPorinis);
+
 /* 09.
 Suskaičiuokite kiek 3-čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai, ir kiek ilgesnių nei 7 simboliai.
 */
+
+let trumpesniNeiPenki = 0;
+let ilgesniNeiSeptyni = 0;
+
+for (let i = 0; i < augalai.length; i++) {
+    if (augalai[i].length < 5) {
+        trumpesniNeiPenki++;
+    }
+    else if (augalai[i].length > 7) {
+        ilgesniNeiSeptyni++
+    }
+}
+
+console.log("Žodžai trumpesni nei 5 simboliai: " + trumpesniNeiPenki);
+console.log("Žodžai ilgesni nei 7 simboliai: " + ilgesniNeiSeptyni);
 
 /* SUNKESNI */
 
