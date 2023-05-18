@@ -276,3 +276,13 @@ form.flex-container {
     flex-direction: column;
     align-items: center;
 }
+
+
+#stars div.journey-image {
+    /* visibility: hidden; */
+    max-width: 500px;
+}
+
+#stars img {
+    max-width: 300px;
+}
