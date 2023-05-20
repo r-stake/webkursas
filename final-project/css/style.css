@@ -40,15 +40,21 @@ ul {
 
 /* HEADER */
 
+.super-hero {
+    background-image: url(../images/background/backgroud-hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .site-header .flex-container {
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-size: 2.25rem;
-    line-height: 190%;
-    letter-spacing: 0%;
+.logo img {
+    max-width: 60px;
+    max-height: 68px;
 }
 
 .main-nav a {
@@ -166,23 +172,29 @@ section#journey.journey {
 .journey-menu-item:active {
     color: #41EAD4;
 }
+/* ------------------------------------------------------------ */
+.section-content .flex-container {
+    max-height: 607px;
+}
 
 .journey-image img {
-    margin-top: 150px;
-    max-width: 500px;
+    /* margin-top: 150px;
+    max-width: 500px; */
+    max-height: 607px;
 }
 
 .journey-description h2 {
-    margin-top: 217px;
-    margin-left: 124px;
+    /* margin-top: 217px; */
+    /* margin-left: 124px; */
     font-size: 4.0625rem;
     line-height: 110%;
     letter-spacing: -2%;
+    max-height: 607px;
 }
 
 .journey-description p {
     font-size: 1.0625rem;
-    margin-left: 126px;
+    /* margin-left: 126px; */
 }
 
 .journey-description .button {
@@ -278,11 +290,15 @@ form.flex-container {
 }
 
 
-#stars div.journey-image {
-    /* visibility: hidden; */
+/* #stars div.journey-image {
+    visibility: hidden;
     max-width: 500px;
 }
 
 #stars img {
     max-width: 300px;
-}
+} */
+
+/* #stars {
+    visibility: hidden;
+} */
