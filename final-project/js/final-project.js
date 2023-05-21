@@ -9,12 +9,13 @@ function switchContent(index) {
   document.getElementById("content" + (index + 1)).style.display = "block";
   
   // Update active menu item
-  var menuItems = document.getElementsByClassName("journey-menu-item")[0].getElementsByTagName("button");
+  var menuItems = document.getElementsByClassName("journey-menu-item");
   for (var i = 0; i < menuItems.length; i++) {
+    var button = menuItems[i].getElementsByTagName("button")[0];
     if (i === index) {
-      menuItems[i].classList.add("active");
+      button.classList.add("active");
     } else {
-      menuItems[i].classList.remove("active");
+      button.classList.remove("active");
     }
   }
 }

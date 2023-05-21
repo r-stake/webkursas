@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    background-color: #0B2E4B;
+    background-color: #011627;
     color: white;
 }
 
@@ -25,7 +25,7 @@ ul {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 25px;
+    /* padding: 25px; */
     border: solid 1px turquoise;
 }
 
@@ -121,9 +121,9 @@ ul {
     justify-content: space-between;
 }
 
-.social-header {
+/* .social-header {
     margin-bottom: 200px;
-}
+} */
 
 .social-header li {
     padding-top: 15px;
@@ -170,9 +170,22 @@ section#journey.journey {
     background-color: #0B2E4B;
 }
 
-.journey-menu-item .active {
-    color: #41EAD4;
+.journey-menu .journey-menu-item button {
+    background-color: #011627;
+    color: rgb(131, 143, 152);
 }
+
+.journey-menu .journey-menu-item button:hover {
+    cursor: pointer;
+}
+
+
+.journey-menu .journey-menu-item button.active {
+    color: #41EAD4;
+    background-color: #011627;
+}
+
+
 
 /* ------------------------------------------------------------ */
 
@@ -180,14 +193,13 @@ section#journey.journey {
     display: block;
 }
 
-#content2,
-#content3,
-#content4 {
+.content {
     display: none;
 }
 
-.section-content .flex-container {
-    max-height: 607px;
+.section-content {
+    min-height: 800px;
+    margin-top: 150px;
 }
 
 .journey-image img {
@@ -203,6 +215,7 @@ section#journey.journey {
     line-height: 110%;
     letter-spacing: -2%;
     max-height: 607px;
+    text-align: center;
 }
 
 .journey-description p {
@@ -224,7 +237,6 @@ section#journey.journey {
     width: 282px;
     height: 65px;
     cursor: pointer;
-    margin-left: 126px;
     margin-top: 45px;
 }
 
@@ -235,10 +247,12 @@ section#journey.journey {
 .journey-description {
     align-self: flex-start;
     padding: 50px 0;
+    padding-left: 125px;
 }
 
 .social .flex-container {
     gap: 10px;
+    justify-content: flex-end;
 }
 
 i {
@@ -265,20 +279,99 @@ i {
     flex-shrink: 2;
 }
 
-.testimonials-header .flex-container {
+/* Testimonials */
+
+.testimonials .testimonials-header {
     flex-direction: column;
     align-items: center;
 }
 
-.testimonials-item {
+/* .testimonials-item {
     width: calc(33.3333% - 17px);
+} */
+
+.testimonials .container {
+    background-color: #011627
 }
 
-.testimonials .testimonials-gallery .container.flex-container {
+.testimonials-header {
+    text-align: center;
+}
+
+.testimonials-header h2 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 110%;
+    letter-spacing: -2%;
+}
+
+.testimonials-header h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: 15%;
+}
+
+.testimonials-gallery {
+    margin-top: 73px;
+}
+
+.testimonials .testimonials-gallery > .flex-container {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 24px;
 }
+
+.testimonials-item {
+    background-color: #02223B;
+    width: 510px;
+    height: 504px;
+    /* margin: 0 78px; */
+}
+
+.testimonials-item > .flex-container {
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 74px;
+    margin-bottom: 75px;
+}
+
+.testimonials-item i {
+    font-size: 32px;
+}
+
+.testimonials-feedback {
+    font-size: 1.125rem;
+    line-height: 190%;
+}
+
+.testimonials-feedback p:first-child {
+    margin: 0;
+}
+
+.testimonials-feedback .flex-container {
+    justify-content: space-between;
+}
+
+.testimonials-feedback .flex-container img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 15px;
+    align-self: center;
+}
+
+.testimonials-feedback .flex-container p {
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-size: 0.75rem;
+    line-height: 170%;
+    letter-spacing: 15%;
+
+}
+
+/* FORM */
 
 form.flex-container {
     justify-content: space-between;
@@ -301,17 +394,3 @@ form.flex-container {
     flex-direction: column;
     align-items: center;
 }
-
-
-/* #stars div.journey-image {
-    visibility: hidden;
-    max-width: 500px;
-}
-
-#stars img {
-    max-width: 300px;
-} */
-
-/* #stars {
-    visibility: hidden;
-} */
