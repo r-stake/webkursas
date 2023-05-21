@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Content Switcher</title>
+  <style>
+    /* Styling for the content elements */
+    .content {
+      display: none; /* Hide all content elements by default */
+      position: absolute;
+      top: 50px; /* Adjust as needed */
+      left: 0;
+      width: 100%;
+      height: 400px; /* Adjust as needed */
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      border: solid 1px red;
+    }
+    
+    /* Styling for the menu bar */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    
+    /* Styling for the active menu item */
+    .menu a.active {
+      font-weight: bold;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="#" class="active" onclick="switchContent(0)">Content 1</a>
+    <a href="#" onclick="switchContent(1)">Content 2</a>
+    <a href="#" onclick="switchContent(2)">Content 3</a>
+    <a href="#" onclick="switchContent(3)">Content 4</a>
+  </div>
+  
+  <div id="content1" class="content" style="display: block;">
+    <div id="stars" class="flex-container">
+      <div class="journey-image">
+          <img src="final-project/images/vietove_1.jpg" alt="Žvaigždėtas dangus">
+      </div>
+      <div class="journey-description">
+          <h2>Sugalvok norą</h2>
+          <p><strong>Mėgstate gamtą, tačiau mintis apie 4 valandų žygį nelygiais takais ir stačiomis kalvomis uodų pilname miške verčia užsitraukti langus ir slėptis po lova? Nebijokite ir pažvelkite aukšyn.</strong></p>
+          <p>Tikram romantikui bet fizinio aktyvumo nemėgstančiam gamtos mylėtojui siūlome nuostabų astronominį reiškinį - meteorų lietaus stebėjimą. Per valandą pamatysite nuo 60 iki 100 meteorų - bent po vieną meteorą per minutę! Net negalite pasigirti aštria rega, malonus ir gaivus miško oras, bei šiltas vasaros vakaras padės pamiršti kasdieninio gyvenimo sunkumus. Greta deginsim laužus, kepsim pyragus, grosim natas ir dainuosim dainas, tad nieko nelauk ir prisijunk prie mūsų. </p>
+          <button class="button">Noriu! / Plačiau</button>
+      </div>
+      <div class="social">
+          <ul class="flex-container">
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          </ul>
+      </div>
+  </div>
+  </div>
+  
+  <div id="content2" class="content">
+    <h2>Content 2</h2>
+    <p>This is the second content element.</p>
+    <img src="content2.jpg" alt="Content 2 Image">
+  </div>
+  
+  <div id="content3" class="content">
+    <h2>Content 3</h2>
+    <p>This is the third content element.</p>
+    <img src="content3.jpg" alt="Content 3 Image">
+  </div>
+  
+  <div id="content4" class="content">
+    <h2>Content 4</h2>
+    <p>This is the fourth content element.</p>
+    <img src="content4.jpg" alt="Content 4 Image">
+  </div>
+  
+  <script>
+    function switchContent(index) {
+      // Hide all content elements
+      var contents = document.getElementsByClassName("content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+      
+      // Show the selected content element
+      document.getElementById("content" + (index + 1)).style.display = "block";
+      
+      // Update active menu item
+      var menuItems = document.getElementsByClassName("menu")[0].getElementsByTagName("a");
+      for (var i = 0; i < menuItems.length; i++) {
+        menuItems[i].classList.remove("active");
+      }
+      menuItems[index].classList.add("active");
+    }
+  </script>
+</body>
+</html>

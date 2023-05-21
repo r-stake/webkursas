@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/final-project.js"></script>
     <title>Gamtos Glėbyje</title>
 </head>
 <body>
@@ -18,7 +17,7 @@
         <header class="site-header">
             <div class="container flex-container">
                 <div class="logo">
-                    <a href="./index.html"><img src="./images/logo.png" alt="#"></a> 
+                    <a href="./index.html"><img src="./images/logo.png" alt="#"></a>
                 </div>
                 <nav class="main-nav">
                     <ul class="flex-container">
@@ -62,90 +61,98 @@
                     </div>
                     <div class="journey-menu flex-container">
                         <div class="journey-menu-item">
-                            <a href="#stars" active>Meteorų lietus</a> 
+                            <a href="" class="active" onclick="switchContent(0)">Meteorų lietus</a>
                         </div>
                         <div class="journey-menu-item">
-                            <a href="#forest">Senoji giria</a>
+                            <a href="" onclick="switchContent(1)">Senoji giria</button>
                         </div>
                         <div class="journey-menu-item">
-                            <a href="#dunes">Pamirštoji dykuma</a>
+                            <a href="" onclick="switchContent(2)">Pamirštoji dykuma</a>
                         </div>
                         <div class="journey-menu-item">
-                            <a href="#river">Rūščioji upė</a>
+                            <a href="" onclick="switchContent(3)">Rūščioji upė</a>
                         </div>
                     </div>
                 </div>
                 <div class="section-content">
-                    <div id="stars" class="flex-container">
-                        <div class="journey-image">
-                            <img src="./images/vietove_1.jpg" alt="Žvaigždėtas dangus">
-                        </div>
-                        <div class="journey-description">
-                            <h2>Sugalvok norą</h2>
-                            <p><strong>Mėgstate gamtą, tačiau mintis apie 4 valandų žygį nelygiais takais ir stačiomis kalvomis uodų pilname miške verčia užsitraukti langus ir slėptis po lova? Nebijokite ir pažvelkite aukšyn.</strong></p>
-                            <p>Tikram romantikui bet fizinio aktyvumo nemėgstančiam gamtos mylėtojui siūlome nuostabų astronominį reiškinį - meteorų lietaus stebėjimą. Per valandą pamatysite nuo 60 iki 100 meteorų - bent po vieną meteorą per minutę! Net negalite pasigirti aštria rega, malonus ir gaivus miško oras, bei šiltas vasaros vakaras padės pamiršti kasdieninio gyvenimo sunkumus. Greta deginsim laužus, kepsim pyragus, grosim natas ir dainuosim dainas, tad nieko nelauk ir prisijunk prie mūsų. </p>
-                            <button class="button">Noriu! / Plačiau</button>
-                        </div>
-                        <div class="social">
-                            <ul class="flex-container">
-                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="forest" class="flex-container">
-                        <div class="journey-image">
-                            <img src="./images/vietove_2.jpg" alt="Labanoro giria">
-                        </div>
-                        <div class="journey-description">
-                            <h2>Pasiklysk girioje</h2>
-                            <p><strong>Didžiausia Lietuvoje senoji Labanoro giria - kryptis norintiems giliai nerti į gamtos pasaulį.</strong></p>
-                            <p>Per kelis Aukštaitijos rajonus besidriekiantys, rodos, nesibaigiantys miškai, medžių tankmėje besislepiantys ežerai ir juos jungiančios upės, augalijos ir gyvūnijos įvairovė - Labanoras yra labai turtingas. Jo didybę pabandykite aprėpti iš vieno aukščiausių Lietuvoje - net 36 metrus siekiančio - Mindūnų apžvalgos bokšto.</p>
-                            <button class="button">Noriu! / Plačiau</button>
-                        </div>
-                        <div class="social">
-                            <ul class="flex-container">
-                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            </ul>
+                    <div id="content1" class="content">
+                        <div id="stars" class="flex-container">
+                            <div class="journey-image">
+                                <img src="./images/vietove_1.jpg" alt="Žvaigždėtas dangus">
+                            </div>
+                            <div class="journey-description">
+                                <h2>Sugalvok norą</h2>
+                                <p><strong>Mėgstate gamtą, tačiau mintis apie 4 valandų žygį nelygiais takais ir stačiomis kalvomis uodų pilname miške verčia užsitraukti langus ir slėptis po lova? Nebijokite ir pažvelkite aukšyn.</strong></p>
+                                <p>Tikram romantikui bet fizinio aktyvumo nemėgstančiam gamtos mylėtojui siūlome nuostabų astronominį reiškinį - meteorų lietaus stebėjimą. Per valandą pamatysite nuo 60 iki 100 meteorų - bent po vieną meteorą per minutę! Net negalite pasigirti aštria rega, malonus ir gaivus miško oras, bei šiltas vasaros vakaras padės pamiršti kasdieninio gyvenimo sunkumus. Greta deginsim laužus, kepsim pyragus, grosim natas ir dainuosim dainas, tad nieko nelauk ir prisijunk prie mūsų. </p>
+                                <button class="button">Noriu! / Plačiau</button>
+                            </div>
+                            <div class="social">
+                                <ul class="flex-container">
+                                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div id="dunes" class="flex-container">
-                        <div class="journey-image">
-                            <img src="./images/vietove_3.png" alt="Dykuma">
-                        </div>
-                        <div class="journey-description">
-                            <h2>Nugalėk dykumą</h2>
-                            <p><strong>Naglių gamtiniame rezervate yra sutelktos išskirtinės gamtinės Kuršių nerijos vertybės, tai - didysis kopagūbris su pilkųjų ir baltųjų kopų kraštovaizdžiu.</strong></p>
-                            <p>Tai vienas įspūdingiausių Kuršių nerijos pėsčiųjų takų, vedantis pro palvę į mėnulio paviršiaus vaizdus primenantį kopų kraštovaizdį. Dėl stiprių vėjų šiose kopose susidaro įspūdingos daubos ir išgraužos, kai kur iš po smėlio išlenda senųjų dirvožemių fragmentai. Tako pabaigoje atsiveria nepaprasto grožio vaizdas į Kuršių marias.</p>
-                            <button class="button">Noriu! / Plačiau</button>
-                        </div>
-                        <div class="social">
-                            <ul class="flex-container">
-                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            </ul>
+                    <div id="content2" class="content">
+                        <div id="forest" class="flex-container">
+                            <div class="journey-image">
+                                <img src="./images/vietove_2.jpg" alt="Labanoro giria">
+                            </div>
+                            <div class="journey-description">
+                                <h2>Pasiklysk girioje</h2>
+                                <p><strong>Didžiausia Lietuvoje senoji Labanoro giria - kryptis norintiems giliai nerti į gamtos pasaulį.</strong></p>
+                                <p>Per kelis Aukštaitijos rajonus besidriekiantys, rodos, nesibaigiantys miškai, medžių tankmėje besislepiantys ežerai ir juos jungiančios upės, augalijos ir gyvūnijos įvairovė - Labanoras yra labai turtingas. Jo didybę pabandykite aprėpti iš vieno aukščiausių Lietuvoje - net 36 metrus siekiančio - Mindūnų apžvalgos bokšto.</p>
+                                <button class="button">Noriu! / Plačiau</button>
+                            </div>
+                            <div class="social">
+                                <ul class="flex-container">
+                                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div id="river" class="flex-container">
-                        <div class="journey-image">
-                            <img src="./images/vietove_4.jpg" alt="Sušlapk kojas">
+                    <div id="content3" class="content">
+                        <div id="dunes" class="flex-container">
+                            <div class="journey-image">
+                                <img src="./images/vietove_3.png" alt="Dykuma">
+                            </div>
+                            <div class="journey-description">
+                                <h2>Nugalėk dykumą</h2>
+                                <p><strong>Naglių gamtiniame rezervate yra sutelktos išskirtinės gamtinės Kuršių nerijos vertybės, tai - didysis kopagūbris su pilkųjų ir baltųjų kopų kraštovaizdžiu.</strong></p>
+                                <p>Tai vienas įspūdingiausių Kuršių nerijos pėsčiųjų takų, vedantis pro palvę į mėnulio paviršiaus vaizdus primenantį kopų kraštovaizdį. Dėl stiprių vėjų šiose kopose susidaro įspūdingos daubos ir išgraužos, kai kur iš po smėlio išlenda senųjų dirvožemių fragmentai. Tako pabaigoje atsiveria nepaprasto grožio vaizdas į Kuršių marias.</p>
+                                <button class="button">Noriu! / Plačiau</button>
+                            </div>
+                            <div class="social">
+                                <ul class="flex-container">
+                                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="journey-description">
-                            <h2>Sušlapk kojas</h2>
-                            <p><strong>Pažinti Dūkštą ir pakopinėti jos šlaitais kviečia Dūkštos pažintinis takas, kuris yra vienas sudėtingiausių, daug fizinių jėgų reikalaujantis, tačiau kartu ir pats įdomiausias Neries regioninio parko maršrutas.</strong></p>
-                            <p>Takas veda ledynų suformuoto Dūkštos upelio slėnio šlaitais, todėl nuolat tenka kilti į viršų ir leistis žemyn. Dėl patvinusio upelio sraunumo Dūkšta dar vadinama Lietuvos kalnų upe. Einant taku galima pamatyti buvusios užtvankos likučius, išvysti storiausią apylinkėse Šventąjį Daubų ąžuolą ar pasidairyti po apylinkes nuo kelių regyklų. Gražiausi vaizdai matomi regykloje ant Ąžuolų kalno, todėl tolimiausią tako tašką būtina pasiekti. Kur dar galima rasti pažintinį taką, kuriame būtų du piliakalniai ir alkakalnis? Be viso to dar laukia įdomūs pažintinio tako stendai, kurie sudomina ir didelius, ir mažus.</p>
-                            <button class="button">Noriu! / Plačiau</button>
-                        </div>
-                        <div class="social">
-                            <ul class="flex-container">
-                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-                            </ul>
+                    </div>
+                    <div id="content4" class="content">
+                        <div id="river" class="flex-container">
+                            <div class="journey-image">
+                                <img src="./images/vietove_4.jpg" alt="Sušlapk kojas">
+                            </div>
+                            <div class="journey-description">
+                                <h2>Sušlapk kojas</h2>
+                                <p><strong>Pažinti Dūkštą ir pakopinėti jos šlaitais kviečia Dūkštos pažintinis takas, kuris yra vienas sudėtingiausių, daug fizinių jėgų reikalaujantis, tačiau kartu ir pats įdomiausias Neries regioninio parko maršrutas.</strong></p>
+                                <p>Takas veda ledynų suformuoto Dūkštos upelio slėnio šlaitais, todėl nuolat tenka kilti į viršų ir leistis žemyn. Dėl patvinusio upelio sraunumo Dūkšta dar vadinama Lietuvos kalnų upe. Einant taku galima pamatyti buvusios užtvankos likučius, išvysti storiausią apylinkėse Šventąjį Daubų ąžuolą ar pasidairyti po apylinkes nuo kelių regyklų. Gražiausi vaizdai matomi regykloje ant Ąžuolų kalno, todėl tolimiausią tako tašką būtina pasiekti. Kur dar galima rasti pažintinį taką, kuriame būtų du piliakalniai ir alkakalnis? Be viso to dar laukia įdomūs pažintinio tako stendai, kurie sudomina ir didelius, ir mažus.</p>
+                                <button class="button">Noriu! / Plačiau</button>
+                            </div>
+                            <div class="social">
+                                <ul class="flex-container">
+                                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -331,5 +338,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/final-project.js"></script>
 </body>
 </html>

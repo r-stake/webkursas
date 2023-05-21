@@ -167,12 +167,25 @@ section#journey.journey {
     letter-spacing: -2%;
     text-decoration: none;
     color: white;
+    background-color: #0B2E4B;
 }
 
-.journey-menu-item:active {
+.journey-menu-item .active {
     color: #41EAD4;
 }
+
 /* ------------------------------------------------------------ */
+
+#content1 {
+    display: block;
+}
+
+#content2,
+#content3,
+#content4 {
+    display: none;
+}
+
 .section-content .flex-container {
     max-height: 607px;
 }
