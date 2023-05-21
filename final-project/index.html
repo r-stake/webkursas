@@ -13,7 +13,7 @@
     <title>Gamtos Glėbyje</title>
 </head>
 <body>
-    <div class="super-hero">
+    <div class="background">
         <header class="site-header">
             <div class="container flex-container">
                 <div class="logo">
@@ -158,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <div class="about-us" id="about-us">
+        <section class="about-us" id="about-us">
             <div class="container flex-container">
                 <div class="about-us-info">
                     <h2>Apie mus</h2>
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="testimonials-header">
@@ -247,32 +247,41 @@
                 </div>
             </div>
         </section>
-        <div class="contact-form">
+        <section class="contact-form">
             <div class="container">
-                <form action="" class="flex-container">
-                    <div class="name">
-                        <label for="">Vardas:</label>
-                        <input type="text" placeholder="Vardas" required>
-                    </div><br>
-                    <div class="last-name">
-                        <label for="">Pavardė:</label>
-                        <input type="text" placeholder="Pavardė" required>
-                    </div><br>
-                    <div class="email">
-                        <label for="">El.paštas:</label>
-                        <input type="email" placeholder="El.paštas" required>
-                    </div><br>
-                    <select name="" id="" required>
-                        <option disabled selected hidden>Pasirink savo nuotykį</option>
-                        <option value="stars">Meteorų lietus</option>
-                        <option value="forest">Senoji giria</option>
-                        <option value="dunes">Pamirštoji dykuma</option>
-                        <option value="river">Rūščioji upė</option>
-                    </select>
-                    <button>Registruotis</button>
-                </form>
+                <div class="section-heading">
+                    <h2>Registracija</h2>
+                    <h3>Apsisprendėte? Tuomet nedelskite ir užsiregistruokite</h3>
+                </div>
+                <div class="section-content">
+                    <form action="" class="input-row">
+                        <div>
+                            <input type="text" placeholder="Vardas" required>
+                            <input type="text" placeholder="Pavardė" required>
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Telefono numeris:" required>
+                            <input type="email" placeholder="El.paštas" required>
+                        </div>
+                        <div>
+                            <div class="flex-container">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <div class="select-button flex-container">
+                                    <select name="" id="" required>
+                                        <option disabled selected hidden>Pasirink savo nuotykį</option>
+                                        <option value="stars">Meteorų lietus</option>
+                                        <option value="forest">Senoji giria</option>
+                                        <option value="dunes">Pamirštoji dykuma</option>
+                                        <option value="river">Rūščioji upė</option>
+                                    </select>
+                                    <button>Registruotis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="see-you-soon">
