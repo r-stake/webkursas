@@ -264,13 +264,58 @@ i {
     margin-top: 268px;
 }
 
-.about-us .flex-container {
+.about-us .container.flex-container {
     justify-content: flex-end;
 }
 
 .about-us-info {
-    flex-shrink: 2;
+    max-width: 321px;
 }
+
+.about-us-info h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -2%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.about-us-info h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 2%;
+}
+
+.about-us-info p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 2%;
+    margin-top: 25px;
+}
+
+.about-us-info button {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 190%;
+    letter-spacing: 15%;
+    color: white;
+    background-color: #00C9E0;
+    width: 282px;
+    height: 65px;
+    border-radius: 183px;
+    border: none;
+    cursor: pointer;
+    margin-top: 38px;
+}
+
+.gallery {
+    margin-left: 80px;
+}
+
 
 /* Testimonials */
 
