@@ -313,9 +313,55 @@ i {
 }
 
 .gallery {
-    margin-left: 80px;
+    margin-left: 80px; /* Tarpas tarp teksto ir nuotraukų */
 }
 
+/* About us overlay */
+
+.gallery-item {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    padding: 10px 25px;
+    bottom: 0;
+    left: -44px;
+    margin-bottom: 50px;
+    background-color: white;
+    color: black;
+    font-size: 0.9375;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 5%;
+    border-radius: 8px;
+    /* width: 186px;
+    height: 75px; */
+}
+
+.overlay-content span {
+
+    color: #00C9E0;
+}
 
 /* Testimonials */
 
@@ -324,9 +370,6 @@ i {
     align-items: center;
 }
 
-/* .testimonials-item {
-    width: calc(33.3333% - 17px);
-} */
 
 .testimonials-header {
     text-align: center;
@@ -593,54 +636,3 @@ i {
 .footer-copyright img {
     margin-top: 26px;
 }
-
-
-.gallery-item {
-    position: relative;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 50px;
-    /* width: 100%;
-    height: 100%; */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-end; */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .overlay {
-    opacity: 1;
-}
-
-.overlay-content {
-    padding: 25px;
-    text-align: center;
-    background-color: white;
-    color: black;
-    font-size: 0.9375;
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 5%;
-    border-radius: 8px;
-    /* width: 186px;
-    height: 75px; */
-}
-
-.overlay-content h3 {
-    margin: 5px 0;
-    font-size: 20px;
-}
-
-.overlay-content span {
-    font-weight: 700;
-    line-height: 150%;
-    letter-spacing: 5%;
-    color: #00C9E0;
-}
-
