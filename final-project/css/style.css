@@ -26,7 +26,7 @@ ul {
     width: 100%;
     margin: 0 auto;
     /* padding: 25px; */
-    border: solid 1px turquoise;
+    border: solid 1px magenta;
 }
 
 .flex-container {
@@ -136,17 +136,6 @@ ul {
 
 /* JOURNEY */
 
-section#journey.journey {
-    border: 1px solid green;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.journey .container {
-    padding: 0;
-}
-
 .journey .container .section-heading h2 {
     text-align: center;
     border: solid 1px magenta;
@@ -185,27 +174,30 @@ section#journey.journey {
     background-color: #011627;
 }
 
-
-
-/* ------------------------------------------------------------ */
-
-#content1 {
-    display: block;
+.journey .section-content {
+    margin-top: 150px;
 }
 
 .content {
     display: none;
 }
 
-.journey .section-content {
-    min-height: 800px;
-    margin-top: 150px;
+#content1 {
+    display: block;
 }
 
 .journey-image img {
     /* margin-top: 150px;
     max-width: 500px; */
     max-height: 607px;
+    max-width: 486px;
+    margin-bottom: 50px;
+}
+
+.journey-description {
+    align-self: center;
+    margin-left: 125px;
+    margin-right: 105px;
 }
 
 .journey-description h2 {
@@ -216,11 +208,11 @@ section#journey.journey {
     letter-spacing: -2%;
     max-height: 607px;
     text-align: center;
+    margin-top: 67px;
 }
 
 .journey-description p {
     font-size: 1.0625rem;
-    /* margin-left: 126px; */
 }
 
 .journey-description .button {
@@ -244,11 +236,6 @@ section#journey.journey {
     font-size: 1.5rem;
 }
 /* -------------------------------------------------------------------------- */
-.journey-description {
-    align-self: flex-start;
-    padding: 50px 0;
-    padding-left: 125px;
-}
 
 .social .flex-container {
     gap: 10px;
@@ -269,6 +256,12 @@ i {
 
 .gallery.flex-container {
     flex-wrap: wrap;
+}
+
+/* About us */
+
+.about-us {
+    margin-top: 268px;
 }
 
 .about-us .flex-container {
@@ -299,6 +292,7 @@ i {
     font-size: 4.5rem;
     line-height: 110%;
     letter-spacing: -2%;
+    margin-top: 378px;
 }
 
 .testimonials-header h3 {
@@ -378,6 +372,7 @@ i {
     font-size: 4.5rem;
     line-height: 110%;
     letter-spacing: -2%;
+    margin-top: 150px;
 }
 
 .contact-form .section-heading h3 {
@@ -474,6 +469,14 @@ i {
 
 
 /* Footer */
+
+.see-you-soon h2 {
+    margin-top: 150px;
+}
+
+.see-you-soon h3 {
+    margin-bottom: 285px;
+}
 
 .see-you-soon .container.flex-container {
     flex-direction: column;
