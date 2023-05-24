@@ -19,3 +19,19 @@ function switchContent(index) {
     }
   }
 }
+
+// Get all gallery items
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+// Add click event listener to each gallery item
+galleryItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    // Remove 'clicked' class from all gallery items
+    galleryItems.forEach((item) => {
+      item.classList.remove('clicked');
+      item.classList.add('not-clicked');
+    });
+    // Add 'clicked' class to the clicked gallery item
+    item.classList.add('clicked');
+  });
+});
